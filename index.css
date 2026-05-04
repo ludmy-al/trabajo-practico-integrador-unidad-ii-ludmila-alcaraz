@@ -1,0 +1,116 @@
+#container {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+body {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}
+
+* {
+  background-color: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 h2 {
+  color: black;
+  font-weight: bold;
+}
+
+.main-header {
+  color: darkgreen;
+  text-decoration: solid;
+}
+
+p {
+  line-height: 20px;
+  text-align: center;
+}
+
+nav ul {
+  background-color: darkgreen;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10;
+  margin: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h2 {
+  border: 1px solid black;
+  background-color: rgb(9, 139, 9);
+  padding: 5px;
+}
+
+main ul {
+  width: 100%;
+  margin: 20px auto;
+  min-height: 78vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  box-shadow: 0 0 100px none;
+  border-radius: 10px;
+}
+
+.nav-menu {
+  background-color: forestgreen;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: darkgreen;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#nav-menu {
+  background-color: darkgreen;
+  border-top: 1px solid rgb(3, 63, 3);
+  font-size: 20px;
+  padding: 10px 0px 10px;
+}
+
+#nav-menu a:hover {
+  color: black;
+  background-color: rgb(3, 63, 3);
+  border-bottom: 5px solid rgb(3, 63, 3);
+  transition: 0.3s all;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  height: 500px;
+  padding: 10px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  text-align: center;
+}

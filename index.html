@@ -3,27 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <title>IPF pagina</title>
   </head>
-  <body>
-    <header class="main-header">
-      <div class="logo">
-        <h1>IPF</h1>
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="institucional.html">Institucional</a></li>
-          <li><a href="carreras.html">Carreras</a></li>
-          <li><a href="contactos.html">Contactos</a></li>
-        </ul>
-      </nav>
-    </header>
+  <div>
+    <body>
+      <header class="main-header">
+        <div class="logo">
+          <h1>IPF</h1>
+        </div>
+        <div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="institucional.html">Institucional</a></li>
+              <li><a href="carreras.html">Carreras</a></li>
+              <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h2>Bienvenido!</h2>
+        <h3>
+          Usted ha ingresado a la pagina del Instituto Politécnico Formosa (IPF)
+        </h3>
+        <p>
+          El Instituto Politécnico de Formosa es una institución educativa
+          pública y gratuita ubicada en la provincia de Formosa, Argentina. Su
+          objetivo es formar técnicos capacitados en diversas áreas, incluyendo
+          Telecomunicaciones, Mecatrónica, Química Industrial y Desarrollo de
+          Software Multiplataforma. El instituto se destaca por ofrecer una
+          educación de calidad, con acceso a laboratorios y equipamiento
+          tecnológico, y se enfoca en el desarrollo industrial y científico
+          local, regional y nacional. Además, cuenta con una infraestructura
+          moderna que incluye aulas, bibliotecas y un laboratorio de diseño y
+          robótica.
+        </p>
 
-    <main></main>
+        <!--carrusel-->
 
-    <footer>
-      <p>&copy; IPF Todos los derechos recervados</p>
-    </footer>
-  </body>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/edificio ipf.jpeg"
+                class="d-block w-100"
+                alt="IPF"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/edificio ipf-2.jpeg"
+                class="d-block w-100"
+                alt="IPF"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/nuevo edificio del IPF 3.jpeg"
+                class="d-block w-100"
+                alt="IPF"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!--Sección de información destacada con Bootstrap Cards-->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">IPF</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Iinformación Destacada
+            </h6>
+            <p class="card-text">
+              El IPF es hoy un polo educativo y tecnológico clave en la región, con infraestructura de vanguardia, carreras estratégicas y fuerte compromiso con el desarrollo local.
+            </p>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; IPF Todos los derechos recervados</p>
+      </footer>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </div>
 </html>
